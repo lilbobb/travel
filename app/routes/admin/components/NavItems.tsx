@@ -6,7 +6,6 @@ import { cn } from "~/lib/utils"
 const NavItems = ({ handleClick }: { handleClick?: () => void }) => {
   const user = useLoaderData()
   const navigate = useNavigate()
-
   const handleLogout = async () => {
     await logoutUser()
     navigate("/sign-in")
@@ -41,10 +40,10 @@ const NavItems = ({ handleClick }: { handleClick?: () => void }) => {
         </nav>
         <footer className="nav-footer">
           <img
-            src={user?.imageUrl || "/assets/images/david.webp"}
+            src={user.imageUrl || "/assets/images/david.webp"}
             alt={user?.name || "David"}
             referrerPolicy="no-referrer"
-          />
+            />
 
           <article>
             <h2>{user?.name}</h2>

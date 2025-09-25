@@ -16,7 +16,6 @@ const AllUsers = ({ loaderData }: Route.ComponentProps) => {
 
   return (
     <main className='all-users wrapper'>
-
       <Header
         title="Manage Users"
         description="Filter, sort and access detailed user profiles"
@@ -51,13 +50,6 @@ const AllUsers = ({ loaderData }: Route.ComponentProps) => {
             template={({ joinedAt }: { joinedAt: string }) =>
               formatDate(joinedAt)}
           />
-
-          {/* <ColumnDirective
-            field="itineraryCreated"
-            headerText="Trip Created"
-            width="130"
-            textAlign="Left"
-          /> */}
 
           <ColumnDirective
             field="status"
