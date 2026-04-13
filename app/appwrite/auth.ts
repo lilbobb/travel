@@ -98,7 +98,7 @@ export const getUser = async () => {
         return documents.length > 0 ? documents[0] : redirect("/sign-in");
     } catch (error) {
         console.error("Error fetching user:", error);
-        return null;
+        return redirect("/sign-in");
     }
 };
 

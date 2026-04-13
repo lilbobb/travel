@@ -5,8 +5,8 @@
   "scripts": {
     "build": "react-router build",
     "typecheck": "react-router typegen && tsc",
-    "start":"react-router serve",
-    "dev":"react-router dev"
+    "start": "react-router serve",
+    "dev": "react-router dev"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
